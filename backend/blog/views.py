@@ -15,7 +15,7 @@ class BlogListView(APIView):
 
 class PostDetailView(APIView):
         def get(self, request, *args, **kwargs):
-            post = get_list_or_404(Post, slug =post_slug)
+            post = get_list_or_404(Post, slug=post_slug)
             serializers = PostSerializer(post)
             return Response(serializers.data)
         

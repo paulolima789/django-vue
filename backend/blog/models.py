@@ -15,8 +15,8 @@ class Post(models.Model):
         
     options = (
         
-        {'draft', 'Draft'},
-        {'published', 'Published'},
+        ('draft', 'Draft'),
+        ('published', 'Published'),
         
     )
     
