@@ -1,0 +1,15 @@
+#django
+python3 django-admin startproject name .
+
+python3 manager.py startapp
+
+
+#venv
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+#pip
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
